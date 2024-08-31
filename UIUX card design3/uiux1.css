@@ -1,0 +1,142 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.overall-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overall-container .card-container{
+    width: 60vw;
+    height: 80vh;
+    box-shadow: 0px 0px 4px black;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(238, 236, 236);
+}
+.overall-container .image-container {
+    width: 65vw;
+    height: 50vh;
+    transform: rotate(-3deg);
+    margin-top: -10vh;
+    margin-left: -30px;
+    background-color: black;
+}
+.image-container .background {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.image-container .title-container {
+    transform: rotate(3deg);
+    display: grid;
+    place-content: center;
+    margin-top: -20vh;
+    margin-right: -2vw;
+    color: white;
+}
+.image-container .title-container h1 {
+    font-size: 7cqmin;
+}
+.image-container .title-container p {
+    font-size: 3.3cqmin;
+    font-weight: light;
+}
+.image-container .title-container button {
+    background-color: goldenrod;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+}
+.title-container figure {
+    margin-top: 10px;
+}
+.title-container figure div {
+    display: inline;
+    margin-right: 30px;
+}
+.image-container .title-container i {
+    font-size: 1.5cqmin;
+    color: goldenrod;
+    padding-right: 2px;
+}
+.image-container .title-container .star {
+    color: white;
+}
+.image-container .title-container .fa-heart {
+    color: red;
+}
+/* <------ image-container end ------> */
+.card-container .content-container {
+    display: flex;
+    margin-top: 5vh;
+}
+.content-container .action {
+    margin-top: 10vh;
+    width: 55vw;
+    height: 15vh;
+    padding: 1rem 1.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+.content-container .action button {
+    border: none;
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.content-container .content {
+    height: 30vh;
+    padding: 1.5rem 3rem;
+    line-height: 1.5;
+    font-size: 16px;
+}
+.content-container .content span {
+    color: dodgerblue;
+}
+.content-container .content div > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0px 0px 6px black;
+    margin: 1rem 1rem 0rem 0rem;
+}
+
+.card-container .logo {
+    width: 160px;
+    height: 220px;
+    position: absolute;
+    bottom: 26vh;
+    left: 3vw;
+    box-shadow: 0px 0px 4px black;
+    background-color: black;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+.logo i {
+    position: absolute;
+    bottom: 12vh;
+    left: 3.5vw;
+    color: white;
+    font-size: 30px;
+    opacity: 0.8;
+    padding: 18px 20px 18px 24px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+

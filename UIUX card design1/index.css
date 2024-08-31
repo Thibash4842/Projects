@@ -1,0 +1,153 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card-container {
+    width: 100vw;
+    height: 100vh;
+    background-color:tan;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    gap: 15px;
+}
+.card-container > .card-design {
+    width: 42rem;
+    height: 18rem;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px black;
+    background-color: white;
+    display: flex;
+}
+.card-design > .img-container {
+    text-align: center;
+    background-color:teal;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-right: 0.5px solid rgb(0, 81, 81);
+}
+.img-container > img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid rgb(0, 81, 81);
+}
+.img-container > button {
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding:0.3rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+.card-design .content-container {
+    width:max-content;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    border-radius: 0px 10px 10px 0px;
+}
+.content-container > header {
+    height: 15.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.content-container header > h1 {
+    font-size: 2.5rem;
+}
+.content-container header > .history {
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.3;
+}
+.content-container header > .infoo {
+    text-align: right;
+    font-size: 1.1rem;
+    line-height: 1.3;
+}
+/* <-------- hover design ------> */
+
+.card-container main > article {
+    height: 8rem;
+}
+.card-container main > figcaption {
+    height: 9rem;
+}
+.content-container main  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.content-container main article > section {
+    width: 26rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-container main figcaption {
+    width: 26rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.content-container main div > i {
+    font-size: 2rem;
+}
+
+
+/* <-------- hover functionality design ---> */
+.content-container > main {
+    display: none;
+    color: white;
+}
+.card-container{
+    position: relative;
+}
+.content-container {
+    width: 100%;
+    background: linear-gradient(to right, teal 50%,white 50%);
+    transition: all 0.6s ease-out;
+    background-size: 200% 100%;
+    background-position: right;
+}
+.content-container:hover > main {
+    display: block;
+}
+.content-container:hover {
+    background-position: left;
+}
+.content-container:hover > header {
+    display: none;
+}
+
+/* <---- card two ----> */
+.card-two > .img-container{
+    background-color: rgb(255, 89, 177);
+    border-right: 1px solid rgb(130, 4, 71);
+}
+.card-two .img-container > img {
+    border: 4px solid rgb(130, 4, 71);
+}
+.cc-two {
+    width: 100%;
+    background: linear-gradient(to right, rgb(255, 89, 177) 50%,white 50%);
+    transition: all 0.6s ease-out;
+    background-size: 200% 100%;
+    background-position: right;
+}
+.cc-two:hover > main {
+    display: block;
+}
+.cc-two:hover {
+    background-position: left;
+}
+.cc:hover > header {
+    display: none;
+}
